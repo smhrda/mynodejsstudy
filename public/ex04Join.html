@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	tr{
+		height: 40px;
+	}
+</style>
+<meta charset="utf-8">
+<title>ex04 Join</title>
+</head>
+<body>	
+	<form action="http://127.0.0.1:3001/Join" method="post">
+		<fieldset>
+			<legend>Join Page</legend>		
+			<table align="center">
+				<tr>
+					<td><label for="id">ID</label></td>
+					<td><input type="text" name="id"></td>
+				</tr>
+				<tr>
+					<td><label for="pw">PW</label></td>
+					<td><input type="password" name="pw"></td>
+				</tr>			
+				<tr>
+					<td><label for="name">NAME</label></td>
+					<td><input type="text" name="name"></td>
+				</tr>				
+				<tr>
+					<td><label for="email">EMAIL</label></td>
+					<td><input type="email" name="email"></td>
+				</tr>				
+				<tr>
+					<td><label for="tel">TEL</label></td>
+					<td><input type="tel" name="tel"></td>
+				</tr>					
+				<tr>
+					<td><label for="gender">GENDER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label></td>
+					<td>MAN<input type="radio" name="gender" value="MAN">WOMAN<input type="radio" name="gender" value="WOMAN"></td>
+				</tr>
+				<tr>
+					<td><label for="hobby">HOBBY</label></td>
+					<td>SPORT<input type="checkbox" name="hobby" value="SPORT">STUDY<input type="checkbox" name="hobby" value="STUDY">EATING<input type="checkbox" name="hobby" value="EATING"></td>
+				</tr>
+				<tr>
+					<td><label for="birth">BIRTHDAY</label></td>
+					<td><input type="date" name="birth"></td>
+				</tr>
+				<tr>
+					<td><label for="color">COLOR</label></td>
+					<td><input type="color" name="color"></td>
+				</tr>
+				<tr>
+					<td><label for="country">COUNTRY</label></td>
+					<td><select name="country" >
+					<option>choice..</option>
+					<option>KOREA</option>
+					<option>USA</option>
+					</select>
+					</td>
+				</tr>	
+				<tr>
+					<td><label for="talk">TALK</label></td>
+					<td><textarea name="talk" rows="10" cols="30"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="확인하기!"></td>
+				</tr>
+				<tr align="center">
+					<td colspan="2"></td>
+				</tr>																				
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

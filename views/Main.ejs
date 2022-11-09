@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+
+<body>
+
+    <% if(id==null){ console.log("로그인을 해주세요") }else{ console.log("로그인 중") } %>
+        <h1>회원관리페이지</h1>
+        <a href="http://127.0.0.1:5500/public/ex06Join.html"><button>회원가입</button></a>
+        <a href="http://127.0.0.1:5500/public/ex06Delete.html"><button>회원삭제</button></a>
+        <a href="http://127.0.0.1:5500/public/ex06Update.html"><button>회원수정</button></a>
+
+        <a href="http://127.0.0.1:3001/SelectAll"><button>회원전체검색</button></a>
+        <a href="http://127.0.0.1:5500/public/ex06SelectOne.html"><button>회원검색</button></a>
+
+        <% if(id==null) {%>
+            <a href="http://127.0.0.1:5500/public/ex06Login.html"><button>로그인</button></a>
+        <% }else{ %>
+                <a href="http://127.0.0.1:3001/Logout"><button>로그아웃</button></a>
+        <% } %>
+</body>
+
+</html>

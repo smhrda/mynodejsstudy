@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	tr{
+		height: 40px;
+		text-align: center;
+	}
+	table{
+		margin: 0 auto;
+	}
+</style>
+<meta charset="UTF-8">
+<title>Grade</title>
+</head>
+<body>	
+	<!-- POST 방식과 GET 방식의 차이
+		GET : url을 통해 쿼리스트링 방식으로 값을 보냄 / but, 보안 나쁨, 데이터 크기 제한O
+		POST : 패킷을 통해 값을 전송 / 보안 좋음, 데이터 크기 제한 X / but, GET보다 느리고 불편 -->
+	<form action="http://127.0.0.1:3001/Grade" method="post">
+		<fieldset>
+			<legend>성적확인프로그램</legend>
+			<table width="500">	
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>JAVA점수</td>
+					<td><input type="text" name="java"></td>
+				</tr>
+				<tr>
+					<td>WEB점수</td>
+					<td><input type="text" name="web"></td>
+				</tr>
+					<tr>
+					<td>IOT점수</td>
+					<td><input type="text" name="iot"></td>
+				</tr>		
+				<tr>
+					<td>ANDROID점수</td>
+					<td><input type="text" name="android"></td>
+				</tr>		
+				<tr>
+					<td colspan="2"><input type="submit" value="확인하기!"></td>
+				</tr>																																			
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
